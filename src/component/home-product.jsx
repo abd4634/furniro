@@ -1,0 +1,119 @@
+import React from "react";
+import product from "../assets/img/Images1.png";
+import { AiOutlineShareAlt } from "react-icons/ai";
+import { MdCompareArrows } from "react-icons/md";
+import { CiHeart } from "react-icons/ci";
+
+const ProductCard = ({ image, category, title, price }) => {
+  return (
+    <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+      <div className="product-card" style={{ backgroundColor: "aliceblue" }}>
+        <a className="block relative h-48 rounded overflow-hidden">
+          <img
+            alt="ecommerce"
+            className="object-cover object-center w-full h-full block"
+            src={image}
+          />
+        </a>
+        <button className="add-to-cart">Add to Cart</button>
+        <div className="product-actions">
+          <button title="Share">
+           <AiOutlineShareAlt />Share
+          </button>
+          <button title="Compare">
+            <MdCompareArrows/>Compare
+          </button>
+          <button title="Like">
+            <CiHeart />Like
+          </button>
+        </div>
+        <div className="mt-4" style={{ padding: "10px", marginTop: "-10px" }}>
+          <h3
+            className="text-gray-500 text-xs tracking-widest title-font mb-1"
+            style={{ color: "#3A3A3A" }}
+          >
+            {category}
+          </h3>
+          <h2
+            className="text-gray-900 title-font text-lg font-medium"
+            style={{ color: "#3A3A3A" }}
+          >
+            {title}
+          </h2>
+          <p className="mt-1">{price}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const ProductList = () => {
+  const products = [
+    {
+      image: product,
+      category: "CATEGORY",
+      title: "The Catalyzer",
+      price: "$16.00",
+    },
+    {
+      image: product,
+      category: "CATEGORY",
+      title: "The Catalyzer",
+      price: "$16.00",
+    },
+    {
+        image: product,
+        category: "CATEGORY",
+        title: "The Catalyzer",
+        price: "$16.00",
+      },
+      {
+        image: product,
+        category: "CATEGORY",
+        title: "The Catalyzer",
+        price: "$16.00",
+      },
+      {
+        image: product,
+        category: "CATEGORY",
+        title: "The Catalyzer",
+        price: "$16.00",
+      },
+      {
+        image: product,
+        category: "CATEGORY",
+        title: "The Catalyzer",
+        price: "$16.00",
+      },
+      {
+        image: product,
+        category: "CATEGORY",
+        title: "The Catalyzer",
+        price: "$16.00",
+      },
+    // Add more products as needed
+  ];
+
+  return (
+    <section className="text-gray-600 body-font">
+      <div className="container px-5 py-24 mx-auto">
+        <div className="flex flex-col text-center w-full mb-12">
+        <h1 className="font-bold text-black text-2xl md:text-4xl leading-[48px] mb-6" style={{ marginTop: "-25px" }}>Our Product</h1>
+        </div>
+        <div className="flex flex-wrap -m-4">
+          {products.map((product, index) => (
+            <ProductCard
+              key={index}
+              image={product.image}
+              category={product.category}
+              title={product.title}
+              price={product.price}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ProductList;
