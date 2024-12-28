@@ -8,14 +8,14 @@ const ProductCard = ({ image, category, title, price }) => {
   return (
     <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
         
-      <div className="product-card" style={{ backgroundColor: "aliceblue" }}>
+      <div className="product-card" style={{ backgroundColor: "#F4F5F7" }}>
       <div
-      className="offer-label"
+        className="offer-label"
         style={{
         position: 'absolute',
         top: '10px',
         right: '10px',
-        backgroundColor: 'red',
+        backgroundColor: '#E97171',
         color: 'white',
         width: '50px',
         height: '50px',
@@ -55,13 +55,14 @@ const ProductCard = ({ image, category, title, price }) => {
             className="text-gray-500 text-xs tracking-widest title-font mb-1"
             style={{ color: "#3A3A3A" }}
           >
-            {category}
+            {title}
           </h3>
           <h2
             className="text-gray-900 title-font text-lg font-medium"
-            style={{ color: "#3A3A3A" }}
+            style={{ color: "#3A3A3A", fontWeight: "600" }}
           >
-            {title}
+            {category}
+            
           </h2>
           <p className="mt-1">{price}</p>
         </div>
