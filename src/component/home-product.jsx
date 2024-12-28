@@ -3,6 +3,7 @@ import product from "../assets/img/Images1.png";
 import { AiOutlineShareAlt } from "react-icons/ai";
 import { MdCompareArrows } from "react-icons/md";
 import { CiHeart } from "react-icons/ci";
+import {Link} from 'react-router-dom'
 
 const ProductCard = ({ image, category, title, price }) => {
   return (
@@ -142,9 +143,9 @@ const ProductList = () => {
           ))}
         </div>
         <div className="flex justify-center">
-                <button className="w-full md:w-[150px] h-[60px] md:h-[50px] bg-[#ffffff] text-[#a77d1f] py-2 px-6 focus:outline-none hover:bg-[#a77d1f] hover:text-white border border-[#a77d1f] text-lg mt-4">
+                <Link to="/shops" className="w-full md:w-[150px] h-[60px] md:h-[50px] bg-[#ffffff] text-[#a77d1f] py-2 px-6 focus:outline-none hover:bg-[#a77d1f] hover:text-white border border-[#a77d1f] text-lg mt-4">
                 Show More
-                </button>
+                </Link>
             </div>
       </div>
       
