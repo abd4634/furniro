@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Logo from "../assets/img/Furniro.png"; // Replace with your logo path
-import { FaShoppingCart, FaHeart, FaSearch } from "react-icons/fa"; // FontAwesome icons
-import { MdAccountCircle } from "react-icons/md"; // Material Design Account Icon
 import {Link} from 'react-router-dom'
-
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { AiOutlineHeart } from "react-icons/ai";
+import { AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineUser } from "react-icons/ai";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -65,16 +66,16 @@ const Navbar = () => {
         {/* Icon Section (Right for desktop and hidden in mobile) */}
         <nav className="hidden md:flex flex-row items-center space-x-5">
           <a href="#account" className="text-2xl hover:text-gray-900">
-            <MdAccountCircle /> {/* Account Icon */}
+            <AiOutlineUser /> {/* Account Icon */}
           </a>
           <a href="#cart" className="text-2xl hover:text-gray-900">
-            <FaShoppingCart /> {/* Shopping Cart Icon */}
+            <AiOutlineShoppingCart /> {/* Shopping Cart Icon */}
           </a>
           <a href="#heart" className="text-2xl hover:text-gray-900">
-            <FaHeart /> {/* Heart Icon */}
+            <AiOutlineHeart /> {/* Heart Icon */}
           </a>
           <a href="#search" className="text-2xl hover:text-gray-900">
-            <FaSearch /> {/* Search Icon */}
+            <AiOutlineSearch /> {/* Search Icon */}
           </a>
         </nav>
       </div>
