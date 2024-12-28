@@ -5,6 +5,7 @@ import Home from './component/home'
 import About from './component/about'
 import Shops from './component/shops'
 import Contact from './component/contact'
+import Footer from './layout/footer'
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Route path='/shops' element={<Shops />} />
         
       </Routes>
-      
+      <Footer/>
     </Router>
   )
 }
