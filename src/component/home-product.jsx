@@ -53,13 +53,13 @@ const ProductCard = ({ image, category, title, price }) => {
         <div className="mt-4" style={{ padding: "10px", marginTop: "-10px" }}>
           <h3
             className="text-gray-500 text-xs tracking-widest title-font mb-1"
-            style={{ color: "#3A3A3A" }}
+            style={{ color: "#3A3A3A", fontSize: "18px", fontWeight: "800" }}
           >
             {title}
           </h3>
           <h2
             className="text-gray-900 title-font text-lg font-medium"
-            style={{ color: "#3A3A3A", fontWeight: "600" }}
+            style={{ color: "#3A3A3A", fontWeight: "400" }}
           >
             {category}
             
@@ -75,33 +75,39 @@ const ProductList = () => {
   const products = [
     {
       image: product,
-      category: "CATEGORY",
-      title: "The Catalyzer",
-      price: "$16.00",
+      category: "Syltherine",
+      title: "Stylish cafe chair",
+      price: "Rp 2.500.000",
     },
     {
       image: product,
-      category: "CATEGORY",
-      title: "The Catalyzer",
-      price: "$16.00",
+      category: "Leviosa",
+      title: "Stylish cafe chair",
+      price: "Rp 2.500.000",
     },
     {
         image: product,
-        category: "CATEGORY",
-        title: "The Catalyzer",
-        price: "$16.00",
+        category: "Lolita",
+        title: "Luxury Big Sofa",
+        price: "Rp 7.000.000",
       },
       {
         image: product,
-        category: "CATEGORY",
-        title: "The Catalyzer",
-        price: "$16.00",
+        category: "Respira",
+        title: "Outdoor bar table and stool",
+        price: "Rp 500.000",
       },
       {
         image: product,
-        category: "CATEGORY",
-        title: "The Catalyzer",
-        price: "$16.00",
+        category: "Grifo",
+        title: "Night lamp",
+        price: "Rp 1.500.000",
+      },
+      {
+        image: product,
+        category: "Muggo",
+        title: "Small Mug",
+        price: "Rp 150.000",
       },
       {
         image: product,
