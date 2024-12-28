@@ -7,7 +7,30 @@ import { CiHeart } from "react-icons/ci";
 const ProductCard = ({ image, category, title, price }) => {
   return (
     <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+        
       <div className="product-card" style={{ backgroundColor: "aliceblue" }}>
+      <div
+      className="offer-label"
+        style={{
+        position: 'absolute',
+        top: '10px',
+        right: '10px',
+        backgroundColor: 'red',
+        color: 'white',
+        width: '50px',
+        height: '50px',
+        borderRadius: '50%',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        fontSize: '12px',
+        fontWeight: 'bold',
+        zIndex: 10,
+        textAlign: 'center',
+      }}
+    >
+      20% OFF
+    </div>
         <a className="block relative h-48 rounded overflow-hidden">
           <img
             alt="ecommerce"
