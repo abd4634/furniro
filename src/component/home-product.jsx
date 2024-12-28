@@ -143,9 +143,13 @@ const ProductList = () => {
           ))}
         </div>
         <div className="flex justify-center">
-                <Link to="/shops" className="w-full md:w-[150px] h-[60px] md:h-[50px] bg-[#ffffff] text-[#a77d1f] py-2 px-6 focus:outline-none hover:bg-[#a77d1f] hover:text-white border border-[#a77d1f] text-lg mt-4">
-                Show More.
-                </Link>
+        <Link 
+          to="/shops" 
+          className="w-full md:w-[180px] h-[60px] md:h-[50px] bg-[#ffffff] text-[#a77d1f] py-2 px-6 focus:outline-none hover:bg-[#a77d1f] hover:text-white border border-[#a77d1f] text-lg mt-4 text-center"
+        >
+          Show More.
+        </Link>
+
             </div>
       </div>
       
