@@ -126,7 +126,7 @@ const ProductList = () => {
 
   return (
     <section className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-5 py-7 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
         <h1 className="font-bold text-black text-2xl md:text-4xl leading-[48px] mb-6" style={{ marginTop: "-25px" }}>Our Product</h1>
         </div>
@@ -141,7 +141,13 @@ const ProductList = () => {
             />
           ))}
         </div>
+        <div className="flex justify-center">
+                <button className="w-full md:w-[150px] h-[60px] md:h-[50px] bg-[#ffffff] text-[#a77d1f] py-2 px-6 focus:outline-none hover:bg-[#a77d1f] hover:text-white border border-[#a77d1f] text-lg mt-4">
+                Show More
+                </button>
+            </div>
       </div>
+      
     </section>
   );
 };
