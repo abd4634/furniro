@@ -2,6 +2,7 @@ import backgroundImage from "../assets/img/Mask Group.png"; // Import your image
 import Dining from "../assets/img/image 76.png";
 import Living from "../assets/img/image 99.png"
 import BedRoom from "../assets/img/Living-Room.png"
+import ProductList from "./home-product";
 
 const HeroSection = () => {
   return (
@@ -81,6 +82,7 @@ const HeroSection = () => {
         </div>
       </div>
     </section>
+    <ProductList/>
 
     </>
   );
