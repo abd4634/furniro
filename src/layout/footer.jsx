@@ -33,13 +33,12 @@ const Footer = () => {
           </nav>
         </div>
 
-        <div className="flex flex-col lg:w-1/4 px-4 mb-6 lg:mb-0">
-          <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3" style={{ fontWeight: "500", fontSize: "16px", lineHeight: "24px", color: "#9F9F9F" }}>Subscribe</h2>
+        <div className="flex flex-row items-center lg:w-1/4 px-4 mb-6 lg:mb-0">
           <input
             type="email"
             placeholder="Enter your Email Address"
-            className="border-b-2 border-black focus:border-blue-500 outline-none text-gray-700 placeholder-gray-500 py-2 px-4 mb-4"
-            style={{ fontWeight: "400", fontSize: "14px" }}
+            className="border-b-2 border-black focus:border-blue-500 outline-none text-gray-700 placeholder-gray-500 py-2 px-4 mr-4"
+            style={{ fontWeight: "400", fontSize: "14px", flexGrow: "1" }}
           />
           <button
             className="border-b-2 border-black hover:border-black py-2 px-6 text-gray-700 font-medium"
