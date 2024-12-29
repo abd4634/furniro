@@ -4,6 +4,7 @@ import Banner from "../assets/img/Rectangle1.png";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import { IoTime } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 const contact = () => {
   return (
@@ -27,8 +28,8 @@ const contact = () => {
                     Contact
                   </h1>
                   <nav className="mt-2 text-sm text-gray-300">
-                    <a
-                      href="#"
+                    <Link to='/'
+                      
                       className="hover:text-white"
                       style={{
                         fontWeight: 400,
@@ -38,7 +39,7 @@ const contact = () => {
                       }}
                     >
                       Home
-                    </a>
+                    </Link>
                     <span
                       className="mx-2"
                       style={{ color: '#000000' }}
@@ -53,7 +54,7 @@ const contact = () => {
                         color: '#000000',
                       }}
                     >
-                      Blog
+                      Contact
                     </span>
                   </nav>
                 </div>
