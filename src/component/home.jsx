@@ -3,6 +3,8 @@ import Dining from "../assets/img/image 76.png";
 import Living from "../assets/img/image 99.png"
 import BedRoom from "../assets/img/Living-Room.png"
 import ProductList from "./home-product";
+import BedRoomImg from "../assets/img/Bed-Room.png"
+import RectangleImg from "../assets/img/Rectangle25.png"
 
 const HeroSection = () => {
   return (
@@ -83,6 +85,137 @@ const HeroSection = () => {
       </div>
     </section>
     <ProductList/>
+    <section className="h-screen py-16 px-8 bg-[#FCF8F3] carosal-section ">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center h-full">
+        {/* Left Content */}
+        <div className="text-left">
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+            50+ Beautiful rooms inspiration
+          </h2>
+          <p className="text-gray-600 mb-6">
+            Our designer already made a lot of beautiful prototypes of rooms
+            that inspire you.
+          </p>
+          <button className="bg-[#a77d1f] text-white py-3 px-6 font-medium hover:bg-[#925f18] transition-all">
+            Explore More
+          </button>
+        </div>
+
+        {/* Center Content */}
+        <div className="relative mx-auto">
+          <div className="w-2/3 mx-auto overflow-hidden shadow-lg relative">
+            <img
+              src={BedRoomImg}
+              alt="Beautiful Room"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute bottom-4 left-4 bg-white px-4 py-2 shadow-lg">
+              <p className="text-sm text-gray-500">01 — Bed Room</p>
+              <h3 className="text-lg font-bold text-gray-800">Inner Peace</h3>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Content */}
+        <div className="flex flex-col items-start gap-4 ">
+          {/* Carousel */}
+          <div id="default-carousel" className="relative w-full" data-carousel="slide">
+            {/* Carousel wrapper */}
+            <div className="relative h-56 overflow-hidden rounded-lg md:h-72">
+              {/* Item 1 */}
+              <div className="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src={RectangleImg}
+                  className="absolute block w-full h-full object-cover"
+                  alt="Room 1"
+                />
+              </div>
+              {/* Item 2 */}
+              <div className="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src={RectangleImg}
+                  className="absolute block w-full h-full object-cover"
+                  alt="Room 2"
+                />
+              </div>
+              {/* Item 3 */}
+              <div className="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src={RectangleImg}
+                  className="absolute block w-full h-full object-cover"
+                  alt="Room 3"
+                />
+              </div>
+            </div>
+
+            {/* Slider indicators */}
+            <div className="absolute z-30 flex -translate-x-1/2 bottom-2 left-1/2 space-x-3">
+              <button
+                type="button"
+                className="w-3 h-3 rounded-full bg-gray-300"
+                aria-current="true"
+                aria-label="Slide 1"
+                data-carousel-slide-to="0"
+              ></button>
+              <button
+                type="button"
+                className="w-3 h-3 rounded-full bg-gray-300"
+                aria-label="Slide 2"
+                data-carousel-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                className="w-3 h-3 rounded-full bg-gray-300"
+                aria-label="Slide 3"
+                data-carousel-slide-to="2"
+              ></button>
+            </div>
+
+            {/* Slider controls */}
+            <button
+              type="button"
+              className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-prev
+            >
+              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 hover:bg-white/50">
+                <svg
+                  className="w-5 h-5 text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </span>
+            </button>
+            <button
+              type="button"
+              className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-next
+            >
+              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 hover:bg-white/50">
+                <svg
+                  className="w-5 h-5 text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     </>
   );
