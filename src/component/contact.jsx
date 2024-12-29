@@ -11,7 +11,6 @@ import { LiaShippingFastSolid } from "react-icons/lia";
 import { BiSupport } from "react-icons/bi";
 
 
-
 const contact = () => {
   return (
     <div>
