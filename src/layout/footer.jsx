@@ -52,7 +52,7 @@ const Footer = () => {
       <div className="bg-white" style={{ borderTop: "1px solid #9F9F9F" }}>
         <div className="container mx-auto py-4 px-5 flex flex-col sm:flex-row justify-between">
           <p className="text-gray-500 text-sm text-center sm:text-left" style={{ fontWeight: "400", fontSize: "16px", lineHeight: "24px", color: "#000000" }}>
-            © 2023 Furino. All Rights Reserved.
+            © 2024 Furino. All Rights Reserved.
           </p>
         </div>
       </div>
