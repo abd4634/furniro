@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -16,10 +17,10 @@ const Footer = () => {
         <div className="flex flex-col lg:w-1/4 px-4 mb-6 lg:mb-0">
           <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3" style={{ fontWeight: "500", fontSize: "16px", lineHeight: "24px", color: "#9F9F9F" }}>Links</h2>
           <nav className="list-none mb-10" style={{ lineHeight: "60px" }}>
-            <li><a className="text-gray-600 hover:text-gray-800" style={{ color: "#000000", fontWeight: "500", fontSize: "16px" }}>Home</a></li>
-            <li><a className="text-gray-600 hover:text-gray-800" style={{ color: "#000000", fontWeight: "500", fontSize: "16px" }}>Shop</a></li>
-            <li><a className="text-gray-600 hover:text-gray-800" style={{ color: "#000000", fontWeight: "500", fontSize: "16px" }}>About</a></li>
-            <li><a className="text-gray-600 hover:text-gray-800" style={{ color: "#000000", fontWeight: "500", fontSize: "16px" }}>Contact</a></li>
+            <li><Link to='/' className="text-gray-600 hover:text-gray-800" style={{ color: "#000000", fontWeight: "500", fontSize: "16px" }}>Home</Link></li>
+            <li><Link to='/shops' className="text-gray-600 hover:text-gray-800" style={{ color: "#000000", fontWeight: "500", fontSize: "16px" }}>Shop</Link></li>
+            <li><Link to='/about' className="text-gray-600 hover:text-gray-800" style={{ color: "#000000", fontWeight: "500", fontSize: "16px" }}>About</Link></li>
+            <li><Link to='/contact' className="text-gray-600 hover:text-gray-800" style={{ color: "#000000", fontWeight: "500", fontSize: "16px" }}>Contact</Link></li>
           </nav>
         </div>
 
