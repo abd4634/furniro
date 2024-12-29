@@ -5,6 +5,12 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import { IoTime } from "react-icons/io5";
 import { Link } from 'react-router-dom';
+import { HiOutlineTrophy } from "react-icons/hi2";
+import { GoVerified } from "react-icons/go";
+import { LiaShippingFastSolid } from "react-icons/lia";
+import { BiSupport } from "react-icons/bi";
+
+
 
 const contact = () => {
   return (
@@ -210,6 +216,79 @@ const contact = () => {
     </div></div>
         
       </div> 
+    </section>
+    <section className="text-gray-600 body-font" style={{ backgroundColor: 'antiquewhite' }}>
+      <div className="container px-5 py-24 mx-auto">
+        <div className="flex flex-wrap -mx-4 -my-8">
+          {/* Item 1: High Quality */}
+          <div className="py-8 px-4 lg:w-1/4 md:w-1/2 sm:w-full">
+            <div className="h-full flex items-start">
+              <div className="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                <HiOutlineTrophy size={50} />
+              </div>
+              <div className="flex-grow pl-6">
+                <h1 className="title-font text-xl font-medium text-gray-900 mb-3" style={{ fontWeight: 600, fontSize: '25px', lineHeight: '37px' }}>
+                  High Quality
+                </h1>
+                <p className="leading-relaxed mb-5" style={{ fontWeight: 500, fontSize: '20px', lineHeight: '30px' }}>
+                  Crafted from top materials
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Item 2: Warranty Protection */}
+          <div className="py-8 px-4 lg:w-1/4 md:w-1/2 sm:w-full">
+            <div className="h-full flex items-start">
+              <div className="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                <GoVerified size={50}/>
+              </div>
+              <div className="flex-grow pl-6">
+                <h1 className="title-font text-xl font-medium text-gray-900 mb-3" style={{ fontWeight: 600, fontSize: '25px', lineHeight: '37px' }}>
+                  Warranty Protection
+                </h1>
+                <p className="leading-relaxed mb-5" style={{ fontWeight: 500, fontSize: '20px', lineHeight: '30px' }}>
+                  Over 2 years
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Item 3: Free Shipping */}
+          <div className="py-8 px-4 lg:w-1/4 md:w-1/2 sm:w-full">
+            <div className="h-full flex items-start">
+              <div className="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                <LiaShippingFastSolid size={50} />
+              </div>
+              <div className="flex-grow pl-6">
+                <h1 className="title-font text-xl font-medium text-gray-900 mb-3" style={{ fontWeight: 600, fontSize: '25px', lineHeight: '37px' }}>
+                  Free Shipping
+                </h1>
+                <p className="leading-relaxed mb-5" style={{ fontWeight: 500, fontSize: '20px', lineHeight: '30px' }}>
+                  Order over 150 $
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Item 4: 24 / 7 Support */}
+          <div className="py-8 px-4 lg:w-1/4 md:w-1/2 sm:w-full">
+            <div className="h-full flex items-start">
+              <div className="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                <BiSupport size={50}/>
+              </div>
+              <div className="flex-grow pl-6">
+                <h1 className="title-font text-xl font-medium text-gray-900 mb-3" style={{ fontWeight: 600, fontSize: '25px', lineHeight: '37px' }}>
+                  24 / 7 Support
+                </h1>
+                <p className="leading-relaxed mb-5" style={{ fontWeight: 500, fontSize: '20px', lineHeight: '30px' }}>
+                  Dedicated Support
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     </div>
   )
