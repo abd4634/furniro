@@ -6,6 +6,8 @@ import About from './component/about'
 import Shops from './component/shops'
 import Contact from './component/contact'
 import Footer from './layout/footer'
+import 'flowbite';
+
 
 function App() {
   return (
@@ -16,7 +18,6 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path='/shops' element={<Shops />} />
-        
       </Routes>
       <Footer/>
     </Router>
