@@ -83,8 +83,8 @@ const contact = () => {
         </div>
         <div className="lg:w-1/2 md:w-1/2 bg-white rounded-lg overflow-hidden p-10 flex flex-col items-start justify-start relative">
           <div className="flex flex-col w-full">
-            <div className="w-full px-6 mb-4 flex items-center">
-              <FaLocationDot/>
+            <div className="w-full px-6 mb-4 flex items-start">
+              <FaLocationDot size={30}/>
               <div>
                 <h2
                   className="title-font font-semibold text-gray-900 tracking-widest text-xs"
@@ -100,8 +100,8 @@ const contact = () => {
                 </p>
               </div>
             </div>
-            <div className="w-full px-6 flex items-center">
-              <FaPhone/>
+            <div className="w-full px-6 flex items-start">
+              <FaPhone size={30}/>
               <div>
                 <h2
                   className="title-font font-semibold text-gray-900 tracking-widest text-xs"
@@ -117,8 +117,8 @@ const contact = () => {
                 </a>
               </div>
             </div>
-            <div className="w-full px-6 mt-4 flex items-center">
-              <IoTime />
+            <div className="w-full px-6 mt-4 flex items-start">
+              <IoTime size={30}/>
               <div>
                 <h2
                   className="title-font font-semibold text-gray-900 tracking-widest text-xs"
