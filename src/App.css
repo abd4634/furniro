@@ -66,5 +66,13 @@
   visibility: visible;
   margin-top: 30px;
   /* Adjust to position below Add to Cart */
+}
 
+
+
+@media (max-width: 767px) {
+  .carosal-section{
+    margin-bottom: 400px;
+    
+  }
 }
