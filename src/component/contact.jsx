@@ -15,7 +15,7 @@ const contact = () => {
   return (
     <div>
             <div
-                className="relative bg-cover bg-center h-64"
+                className="relative bg-cover bg-center bg-no-repeat h-64"
                 style={{ backgroundImage: `url(${Banner})` }}
               >
                 <div className="absolute inset-0 bg-black/30"></div>
