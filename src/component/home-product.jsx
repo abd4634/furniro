@@ -10,7 +10,7 @@ import Grifo from "../assets/img/Grifo.png";
 import { AiOutlineShareAlt } from "react-icons/ai";
 import { MdCompareArrows } from "react-icons/md";
 import { CiHeart } from "react-icons/ci";
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
 const ProductCard = ({ image, category, title, price }) => {
   return (
