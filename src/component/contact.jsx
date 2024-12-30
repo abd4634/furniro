@@ -12,6 +12,18 @@ import { BiSupport } from "react-icons/bi";
 
 
 const contact = () => {
+  function Submit(e) {
+    e.preventDefault();
+    const formEle = document.querySelector("form");
+    console.log("submitted");
+
+    const formData = new FormData(formEle);
+    fetch('https://script.google.com/macros/s/AKfycbyF103_J5C46ngCKvWq8Cpw1YTvpSbzfp5_jN09wCvDDwoTLGPl2TyA8QpA_AHv4uxm/exec', {
+        method: "POST",
+        body: formData
+    
+    });
+}
   return (
     <div>
             <div
@@ -143,76 +155,81 @@ const contact = () => {
       <p className="leading-relaxed mb-5 text-gray-600">
         Post-ironic portland shabby chic echo park, banjo fashion axe
       </p>
-      <div className="relative mb-4">
-        <label
-          htmlFor="name"
-          className="leading-7 text-sm text-gray-600"
-          style={{ fontWeight: 500, fontSize: '16px', lineHeight: '24px' }}
-        >
-          Your Name
-        </label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-          style={{ borderColor: '#9F9F9F' }}
-        />
-      </div>
-      <div className="relative mb-4">
-        <label
-          htmlFor="email"
-          className="leading-7 text-sm text-gray-600"
-          style={{ fontWeight: 500, fontSize: '16px', lineHeight: '24px' }}
-        >
-          Email
-        </label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-          style={{ borderColor: '#9F9F9F' }}
-        />
-      </div>
-      <div className="relative mb-4">
-        <label
-          htmlFor="subject"
-          className="leading-7 text-sm text-gray-600"
-          style={{ fontWeight: 500, fontSize: '16px', lineHeight: '24px' }}
-        >
-          Subject
-        </label>
-        <input
-          type="text"
-          id="subject"
-          name="subject"
-          className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-          style={{ borderColor: '#9F9F9F' }}
-        />
-      </div>
-      <div className="relative mb-4">
-        <label
-          htmlFor="message"
-          className="leading-7 text-sm text-gray-600"
-          style={{ fontWeight: 500, fontSize: '16px', lineHeight: '24px' }}
-        >
-          Message
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-          style={{ borderColor: '#9F9F9F' }}
-        ></textarea>
-      </div>
-      <button
-        className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 text-lg"
-        style={{ width: '237px', height: '55px', backgroundColor: '#B88E2F' }}
-      >
-        Submit
-      </button>
-    </div></div>
+          <form className='form' onSubmit={(e) => Submit(e)}>
+            <div className="relative mb-4">
+              <label 
+                htmlFor="name"
+                className="leading-7 text-sm text-gray-600"
+                style={{ fontWeight: 500, fontSize: '16px', lineHeight: '24px' }}
+              >
+                Your Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="Name"
+                className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                style={{ borderColor: '#9F9F9F' }}
+              />
+            </div>
+            <div className="relative mb-4">
+              <label
+                type="email"
+                htmlFor="email"
+                className="leading-7 text-sm text-gray-600"
+                style={{ fontWeight: 500, fontSize: '16px', lineHeight: '24px' }}
+              >
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="Email"
+                className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                style={{ borderColor: '#9F9F9F' }}
+              />
+            </div>
+            <div className="relative mb-4">
+              <label
+                htmlFor="subject"
+                className="leading-7 text-sm text-gray-600"
+                style={{ fontWeight: 500, fontSize: '16px', lineHeight: '24px' }}
+              >
+                Subject
+              </label>
+              <input
+                type="text"
+                id="subject"
+                name="Subject"
+                className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                style={{ borderColor: '#9F9F9F' }}
+              />
+            </div>
+            <div className="relative mb-4">
+              <label
+                htmlFor="message"
+                className="leading-7 text-sm text-gray-600"
+                style={{ fontWeight: 500, fontSize: '16px', lineHeight: '24px' }}
+              >
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="Message"
+                className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                style={{ borderColor: '#9F9F9F' }}
+              ></textarea>
+            </div>
+            <button
+              className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 text-lg"
+              style={{ width: '237px', height: '55px', backgroundColor: '#B88E2F' }}
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+    </div>
+    </div>
         
       </div> 
     </section>
