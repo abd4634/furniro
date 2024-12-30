@@ -1,5 +1,12 @@
 import React from "react";
 import product from "../assets/img/Images1.png";
+import Respira from "../assets/img/respira.jpeg";
+import BigSofa from "../assets/img/luxury-big-sofa.png";
+import Levious from "../assets/img/Levious.png";
+import PottySofa from "../assets/img/pottysofa.jpeg";
+import Pingky from "../assets/img/pingky.jpeg";
+import Muggo from "../assets/img/muggo.png";
+import Grifo from "../assets/img/Grifo.png";
 import { AiOutlineShareAlt } from "react-icons/ai";
 import { MdCompareArrows } from "react-icons/md";
 import { CiHeart } from "react-icons/ci";
@@ -81,43 +88,43 @@ const ProductList = () => {
       price: "Rp 2.500.000",
     },
     {
-      image: product,
+      image: Levious,
       category: "Leviosa",
       title: "Stylish cafe chair",
       price: "Rp 2.500.000",
     },
     {
-        image: product,
+        image: BigSofa,
         category: "Lolita",
         title: "Luxury Big Sofa",
         price: "Rp 7.000.000",
       },
       {
-        image: product,
+        image: Respira,
         category: "Respira",
         title: "Outdoor bar table and stool",
         price: "Rp 500.000",
       },
       {
-        image: product,
+        image: Grifo,
         category: "Grifo",
         title: "Night lamp",
         price: "Rp 1.500.000",
       },
       {
-        image: product,
+        image: Muggo,
         category: "Muggo",
         title: "Small Mug",
         price: "Rp 150.000",
       },
       {
-        image: product,
+        image: Pingky,
         category: "CATEGORY",
         title: "The Catalyzer",
         price: "$16.00",
       },
       {
-        image: product,
+        image: PottySofa,
         category: "CATEGORY",
         title: "The Catalyzer",
         price: "$16.000",
