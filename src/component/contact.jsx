@@ -155,7 +155,11 @@ const contact = () => {
       <p className="leading-relaxed mb-5 text-gray-600">
         Post-ironic portland shabby chic echo park, banjo fashion axe
       </p>
-          <form className='form' onSubmit={(e) => Submit(e)}>
+          <form className='form' onSubmit={(e) => {
+            e.preventDefault(); // Prevent default form submission behavior
+            Submit(e); // Call your submit logic
+            e.target.reset(); // Reset all form fields
+          }}>
             <div className="relative mb-4">
               <label 
                 htmlFor="name"
