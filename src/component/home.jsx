@@ -6,6 +6,7 @@ import ProductList from "./home-product";
 import BedRoomImg from "../assets/img/Bed-Room.png"
 import RectangleImg from "../assets/img/Rectangle25.png"
 
+
 const HeroSection = () => {
   return (
     <>
