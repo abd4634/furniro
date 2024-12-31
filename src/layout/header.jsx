@@ -5,6 +5,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { AiOutlineHeart } from "react-icons/ai";
 import { AiOutlineSearch } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
+import Breadcrumbs from "../component/Breadcrumbs";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -92,6 +93,7 @@ const Navbar = () => {
           </a>
         </nav>
       </div>
+      <Breadcrumbs/>
     </header>
 
   );
