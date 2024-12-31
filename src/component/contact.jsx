@@ -90,7 +90,7 @@ const contact = () => {
             style={{ alignItems: 'center', fontWeight: 400, fontSize: '16px', lineHeight: '24px' }}
           >
             For More information About Our Product & Services. Please Feel Free to Drop Us An Email. 
-            our Staff Always be There to help you out. Do Not Hesitate.
+            our Staff Always be There to help you out. Do Not Hesitat.
           </p>
         </div>
         <div className="lg:w-1/2 md:w-1/2 bg-white rounded-lg overflow-hidden p-10 flex flex-col items-start justify-start relative">
