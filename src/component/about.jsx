@@ -6,7 +6,7 @@ import favicon from "../assets/img/favicon.png";
 const about = () => {
   return (
     <div>
-        
+        <h1>About Us</h1>
     </div>
   )
 }
